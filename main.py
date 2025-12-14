@@ -31,7 +31,6 @@ Musk is a supporter of global far-right figures, causes, and political parties. 
         template=summary_template
     )
 
-
     llm = ChatOpenAI(model="openai/gpt-4o", api_key=os.getenv("OPENROUTER_API_KEY"), base_url="https://openrouter.ai/api/v1"    )
 
     #llm = ChatOllama(temperature=0, model="gemma3:270m")
