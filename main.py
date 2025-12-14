@@ -13,8 +13,7 @@ tools = [TavilySearch()]
 llm = ChatOpenAI(model="openai/gpt-4o", api_key=os.getenv("OPENROUTER_API_KEY"), base_url="https://openrouter.ai/api/v1")
 react_prompt = hub.pull("hwchase17/react")
 agent = create_react_agent(llm=llm, tools=tools, prompt=react_prompt)
-
-agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True)
 chain = agent_executor
 
 def main():
