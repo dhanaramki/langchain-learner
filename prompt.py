@@ -1,5 +1,4 @@
-
-REACT_PROMPT_WITH_FORMAT_INSTRUCTIONS="""
+REACT_PROMPT_WITH_FORMAT_INSTRUCTIONS = """
 
 Answer the following questions as best you can. You have access to the following tools:
 
